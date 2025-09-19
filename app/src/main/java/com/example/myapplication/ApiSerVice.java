@@ -1,4 +1,11 @@
 package com.example.myapplication;
 
-public class ApiSerVice {
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.http.GET;
+
+public interface ApiSerVice {
+    @GET("posts")//Endpoint
+    Call<List< TextNote>> getTextNote();
 }
